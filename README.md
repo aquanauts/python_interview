@@ -4,6 +4,8 @@ If you have an on-site interview at Aquatic, you'll use this prepared workspace 
 
 During your interview, you'll work along side another Aquatic software engineer to write the code and come up with a complete working solution in about 2 hours. You'll be able to look things up on the Internet, just as you would on any regular working day. Along the way, the requirements may change, so be prepared to make adjustments accordingly.
 
+If you prefer, you can solve this problem on your own time, using your own computer. Fork the project, and be sure to have your finished solution pushed to Github when you arrive for your interview. When you get here, you'll spend some additional time changing it while working along side another Aquatic software engineer.
+
 ## The Problem
 
 Included in this repository is a data set taken from the [City of Chicago's Open Data portal](https://data.cityofchicago.org/). It has weather data from Chicago beaches in CSV format.
