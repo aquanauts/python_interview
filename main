@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+if [[ ! -d .venv ]]; then
+  echo "Dependencies have not been installed. Run 'make run' to install them."
+  exit 1
+fi
+
+PYTHONPATH=. ${basedir}/.venv/bin/python3 interview

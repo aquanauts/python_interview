@@ -1,0 +1,47 @@
+SHELL := $(shell which bash)
+MINICONDA := $(CURDIR)/.miniconda3
+CONDA := $(MINICONDA)/bin/conda
+CONDA_VERSION := 4.7.10
+VENV := $(PWD)/.venv
+DEPS := $(VENV)/.deps
+PYTHON := $(VENV)/bin/python
+PYTHON_CMD := PYTHONPATH=$(CURDIR) $(PYTHON)
+
+.PHONY: test help
+
+ifndef VERBOSE
+.SILENT:
+endif
+
+help:
+	grep -E '^[0-9a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+
+FORCE:
+
+$(CONDA):
+	echo "Installing Miniconda3 to $(MINICONDA)"
+	wget https://repo.anaconda.com/miniconda/Miniconda3-$(CONDA_VERSION)-Linux-x86_64.sh -O $(CURDIR)/miniconda.sh
+	bash $(CURDIR)/miniconda.sh -u -b -p "$(CURDIR)/.miniconda3"
+	rm $(CURDIR)/miniconda.sh
+
+$(PYTHON): | $(CONDA)
+	$(CONDA) env create -p $(VENV)
+
+$(DEPS): environment.yml $(PYTHON)
+	$(CONDA) env update --prune --quiet -p $(VENV) -f environment.yml
+	cp environment.yml $(DEPS)
+
+clean:
+	find . -name __pycache__ | xargs rm -rf
+
+test: $(DEPS)  ## Run tests
+	$(PYTHON_CMD) -m pytest
+
+watch: $(DEPS) ## Run unit tests continuously
+	$(PYTHON_CMD) -mpytest_watch
+
+repl: ## Run an iPython REPL
+	$(VENV)/bin/ipython
+
+run: $(DEPS) ## Run the program on the provided dataset
+	cat data/chicago_beach_weather.csv | ./main

@@ -1,0 +1,12 @@
+---
+name: interview
+
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipython=7.6.0
+  - humanfriendly=4.18
+  - pip
+  - pip:
+    - pytest-watch==4.2.0
