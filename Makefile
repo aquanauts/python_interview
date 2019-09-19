@@ -32,6 +32,8 @@ $(DEPS): environment.yml $(PYTHON)
 	cp environment.yml $(DEPS)
 
 clean:
+	rm -rf $(VENV)
+	rm -rf $(MINICONDA)
 	find . -name __pycache__ | xargs rm -rf
 
 test: $(DEPS)  ## Run tests
