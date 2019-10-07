@@ -4,7 +4,7 @@ If you have an on-site interview at Aquatic, you'll use this prepared workspace 
 
 During your interview, you'll work along side another Aquatic software engineer to write the code and come up with a complete working solution in about 2 hours. You'll be able to look things up on the Internet, just as you would on any regular working day. Along the way, the requirements may change, so be prepared to make adjustments accordingly.
 
-If you prefer, you can solve this problem on your own time, using your own computer. Clone this repository, create a solution, and then generate patch file for your solution by running `make patch`. Send the resulting patch file
+If you prefer, you can solve this problem on your own time, using your own computer. Clone this repository, create a solution, and then generate patch file for your solution by running `make patch`. Send the resulting patch file to Aquatic before your interview.
 
 ## The Problem
 
