@@ -2,9 +2,16 @@
 
 If you have an on-site interview at Aquatic, you'll use this prepared workspace to solve the programming problem described below. We're sharing it with everyone to ensure a level playing field when it comes to knowledge about technical interviews in the finance industry.
 
-During your interview, you'll work along side another Aquatic software engineer to write the code and come up with a complete working solution in about 2 hours. You'll be able to look things up on the Internet, just as you would on any regular working day. Along the way, the requirements may change, so be prepared to make adjustments accordingly.
+During your interview, you'll work along side another Aquatic software engineer to write the code and come up with a complete working solution in 2-3 hours. You'll be able to look things up on the Internet, just as you would on any regular working day. You'll use a Linux workstation (like the ones we use) to write the code with an editor of your choice. Along the way, the requirements may change, so be prepared to make adjustments accordingly. We'll try to make this experience as realistic as possible, so you can get a sense of what working at Aquatic is really like.
 
-If you prefer, you can solve this problem on your own time, using your own computer. Clone this repository, create a solution, and then generate patch file for your solution by running `make patch`. Send the resulting patch file to Aquatic before your interview.
+Here are some of the criteria by which you'll be evaluated:
+
+  * Can you create an effective solution in the time given? Does it actually run?
+  * Can you adapt your solution to new requirements?
+  * Can you explain what you're doing and why?
+  * Can you maintain good project hygiene, treating this like "real world" software.
+
+If you prefer, you can solve this problem on your own time, using your own computer (Linux recommended). Then, once you arrive at Aquatic for your interview, you'll spend some time working with another engineer to adapt your solution to new requirements. Ask your contact at Aquatic how to submit your solution before your interview. 
 
 ## The Problem
 
