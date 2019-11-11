@@ -20,28 +20,28 @@ Included in this repository is a data set taken from the [City of Chicago's Open
 You'll need to write a command line tool in Python that turns the (roughly) one hour temperature samples into daily aggregates, with the start, end, high, and low of all the values of the Air Temperature for each day, at each weather station. For example, assuming the temperature values on a particular day at a particular station were:
 
 ```
-01/01/2016 11:00:00 PM,69
-01/01/2016 08:00:00 PM,70
-01/01/2016 07:00:00 PM,70
-01/01/2016 06:00:00 PM,72
-01/01/2016 05:00:00 PM,72
-01/01/2016 04:00:00 PM,73
-01/01/2016 03:00:00 PM,69
-01/01/2016 02:00:00 PM,70
-01/01/2016 01:00:00 PM,70
-01/01/2016 12:00:00 PM,70
-01/01/2016 11:00:00 AM,70
-01/01/2016 10:00:00 AM,70
-01/01/2016 09:00:00 AM,70
-01/01/2016 08:00:00 AM,71
-01/01/2016 07:00:00 AM,72
-01/01/2016 06:00:00 AM,72
-01/01/2016 05:00:00 AM,71
-01/01/2016 04:00:00 AM,69
-01/01/2016 03:00:00 AM,67
-01/01/2016 02:00:00 AM,64
-01/01/2016 01:00:00 AM,67
-01/01/2016 12:00:00 AM,67
+Foster Weather Station,01/01/2016 11:00:00 PM,69
+Foster Weather Station,01/01/2016 08:00:00 PM,70
+Foster Weather Station,01/01/2016 07:00:00 PM,70
+Foster Weather Station,01/01/2016 06:00:00 PM,72
+Foster Weather Station,01/01/2016 05:00:00 PM,72
+Foster Weather Station,01/01/2016 04:00:00 PM,73
+Foster Weather Station,01/01/2016 03:00:00 PM,69
+Foster Weather Station,01/01/2016 02:00:00 PM,70
+Foster Weather Station,01/01/2016 01:00:00 PM,70
+Foster Weather Station,01/01/2016 12:00:00 PM,70
+Foster Weather Station,01/01/2016 11:00:00 AM,70
+Foster Weather Station,01/01/2016 10:00:00 AM,70
+Foster Weather Station,01/01/2016 09:00:00 AM,70
+Foster Weather Station,01/01/2016 08:00:00 AM,71
+Foster Weather Station,01/01/2016 07:00:00 AM,72
+Foster Weather Station,01/01/2016 06:00:00 AM,72
+Foster Weather Station,01/01/2016 05:00:00 AM,71
+Foster Weather Station,01/01/2016 04:00:00 AM,69
+Foster Weather Station,01/01/2016 03:00:00 AM,67
+Foster Weather Station,01/01/2016 02:00:00 AM,64
+Foster Weather Station,01/01/2016 01:00:00 AM,67
+Foster Weather Station,01/01/2016 12:00:00 AM,67
 ```
 
 Then the expected values for start, end, high, and low for this day would be:
