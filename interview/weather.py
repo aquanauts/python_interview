@@ -1,3 +1,3 @@
 
 def process_csv(reader, writer):
-    writer.write("Hello World\n")
+    writer.write(f"Saw {len(reader.readlines())} lines" + "\n")
