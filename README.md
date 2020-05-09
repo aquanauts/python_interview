@@ -1,6 +1,6 @@
-# Aquatic's General Purpose Programming Interview
+# Aquatic's Python Programming Interview
 
-If you have an on-site interview at Aquatic, you'll use this prepared workspace to solve the programming problem described below. We're sharing it with everyone to ensure a level playing field when it comes to knowledge about technical interviews in the finance industry.
+If you have an on-site python interview at Aquatic, you'll use this prepared workspace to solve the programming problem described below. We're sharing it with everyone to ensure a level playing field when it comes to knowledge about technical interviews in the finance industry.
 
 During your interview, you'll work along side another Aquatic software engineer to write the code and come up with a complete working solution in 2 hours. You'll be able to look things up on the Internet, just as you would on any regular working day. You'll use a Linux workstation (like the ones we use) to write the code with an editor of your choice. Along the way, the requirements may change, so be prepared to make adjustments accordingly. We'll try to make this experience as realistic as possible, so you can get a sense of what working at Aquatic is really like.
 
