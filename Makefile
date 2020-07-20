@@ -9,6 +9,14 @@ PYTHON_CMD := PYTHONPATH=$(CURDIR) $(PYTHON)
 
 .PHONY: test help
 
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+	MINICONDA_URL := https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+endif
+ifeq ($(UNAME_S),Darwin)
+	MINICONDA_URL := https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+endif
+
 ifndef VERBOSE
 .SILENT:
 endif
@@ -20,7 +28,7 @@ FORCE:
 
 $(CONDA):
 	echo "Installing Miniconda3 to $(MINICONDA)"
-	wget https://repo.anaconda.com/miniconda/Miniconda3-$(CONDA_VERSION)-Linux-x86_64.sh -O $(CURDIR)/miniconda.sh
+	wget ${MINICONDA_URL} -O $(CURDIR)/miniconda.sh
 	bash $(CURDIR)/miniconda.sh -u -b -p "$(CURDIR)/.miniconda3"
 	rm $(CURDIR)/miniconda.sh
 
