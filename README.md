@@ -11,7 +11,7 @@ Here are some of the criteria by which you'll be evaluated:
   * Can you explain what you're doing and why?
   * Can you maintain good project hygiene, treating this like "real world" software.
 
-If you prefer, you can solve this problem on your own time, using your own computer (Linux recommended). Then, once you arrive at Aquatic for your interview, you'll spend some time working with another engineer to adapt your solution to new requirements. Ask your contact at Aquatic how to submit your solution before your interview. 
+If you prefer, you can solve this problem on your own time, using your own computer (Linux recommended). Then, once you arrive at Aquatic for your interview, you'll spend some time working with another engineer to adapt your solution to new requirements. See the section below for instructions. 
 
 ## The Problem
 
@@ -59,6 +59,7 @@ This repository has a Makefile, prepared for a Linux environment, with various t
 
 ```
 aquanauts/interview$ make
+patch                          Generate a patch file to submit for your solution
 repl                           Run an iPython REPL
 run                            Run the program on the provided dataset
 test                           Run tests
@@ -68,3 +69,16 @@ watch                          Run unit tests continuously
 For example, to run the tests, you run `make test`. The `watch` target will run the tests automatically whenever you change a `.py` file. Any of these targets will automatically install all the necessary dependencies (including miniconda3) to the repository directory.
 
 You are encouraged take a few minutes to clone this repository and experiment with this environment before your interview, so that it is familiar to you when you arrive. Feel free to ask any questions if you run into problems.
+
+## Submitting an At-Home Solution
+
+If you've chosen to complete the first iteration of this exercise at home, here's how you can submit your solution to Aquatic:
+
+#### Run `make patch`
+
+When you've completed the exercise and are happy with the result, run `make patch` from the command line, in the root of the repository. This will generate a file named `aquatic_interview_solution.patch`.
+
+#### Submit Your Solution
+
+Once you've generated a patch file, you can send it to us using the link provided by your contact at Aquatic. If you run into problems, or have questions, feel free to reach out and ask!
+
