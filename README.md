@@ -51,7 +51,16 @@ Then the expected values for start, end, high, and low for this day would be:
 * high: 73
 * low: 64
 
-The program should read the data from STDIN and output the aggregated data to STDOUT in CSV format. The exact details of the output format are up to you.
+### Output format
+
+The program should read the data from STDIN and output the aggregated data to STDOUT in CSV format. The resulting CSV should follow this format:
+
+```
+Station Name,Date,Min Temp,Max Temp,First Temp,Last Temp
+Foster Weather Station,01/01/2016,64.0,73.0,67.0,69.0
+...
+```
+
 
 ## Problem Environment
 
