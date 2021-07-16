@@ -1,17 +1,15 @@
 # Aquatic's Python Programming Interview
 
-If you have an on-site python interview at Aquatic, you'll use this prepared workspace to solve the programming problem described below. We're sharing it with everyone to ensure a level playing field when it comes to knowledge about technical interviews in the finance industry.
+If you have a software engineering interview at Aquatic, we'll ask you to use this prepared workspace to solve the problem described below. We're sharing it with everyone to ensure a level playing field when it comes to knowledge about technical interviews in the finance industry.
 
-During your interview, you'll work along side another Aquatic software engineer to write the code and come up with a complete working solution in 2 hours. You'll be able to look things up on the Internet, just as you would on any regular working day. You'll use a Linux workstation (like the ones we use) to write the code with an editor of your choice. Along the way, the requirements may change, so be prepared to make adjustments accordingly. We'll try to make this experience as realistic as possible, so you can get a sense of what working at Aquatic is really like.
+This exercise has two parts. First, we'll ask you to solve it at home on either a Mac or Linux computer. If you don't have access to a computer like that, contact us, and we'll arrange to provide you with a development environment. We expect that solving this will take you an hour or two. When you're finished, generate a patch file and send it to us (instructions below). Here are some of the things we'll be looking for in your solution:
 
-Here are some of the criteria by which you'll be evaluated:
+  * Can you create an effective solution in a reasonable amount of time? Does it actually work?
+  * Did you add any unnecessary complexity?
+  * Is it well tested?
+  * Can you maintain good project hygiene, treating this like "real world" software?
 
-  * Can you create an effective solution in the time given? Does it actually run?
-  * Can you adapt your solution to new requirements?
-  * Can you explain what you're doing and why?
-  * Can you maintain good project hygiene, treating this like "real world" software.
-
-If you prefer, you can solve this problem on your own time, using your own computer (Linux recommended). Then, once you arrive at Aquatic for your interview, you'll spend some time working with another engineer to adapt your solution to new requirements. See the section below for instructions. 
+For the second part, we'll pair you up with another Aquatic engineer to review your solution and add some new functionality to it. 
 
 ## The Problem
 
@@ -58,6 +56,7 @@ The program should read the data from STDIN and output the aggregated data to ST
 ```
 Station Name,Date,Min Temp,Max Temp,First Temp,Last Temp
 Foster Weather Station,01/01/2016,64.0,73.0,67.0,69.0
+Foster Weather Station,01/02/2016,21.0,32.0,22.1,30.3
 ...
 ```
 
@@ -79,9 +78,9 @@ For example, to run the tests, you run `make test`. The `watch` target will run 
 
 You are encouraged take a few minutes to clone this repository and experiment with this environment before your interview, so that it is familiar to you when you arrive. Feel free to ask any questions if you run into problems.
 
-## Submitting an At-Home Solution
+## Submitting Your Solution
 
-If you've chosen to complete the first iteration of this exercise at home, here's how you can submit your solution to Aquatic:
+Here's how you can submit your solution to Aquatic.
 
 #### Run `make patch`
 
