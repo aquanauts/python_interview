@@ -7,7 +7,7 @@ This exercise has two parts. First, we'll ask you to solve it at home on either 
   * Can you create an effective solution in a reasonable amount of time? Does it actually work?
   * Did you add any unnecessary complexity?
   * Is it well tested?
-  * Can you maintain good project hygiene, treating this like "real world" software?
+  * Can you maintain good project hygiene, treating this like "real world" software that you would want to maintain in perpetuity?
 
 For the second part, we'll pair you up with another Aquatic engineer to review your solution and add some new functionality to it. 
 
