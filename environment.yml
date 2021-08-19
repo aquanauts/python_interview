@@ -7,6 +7,7 @@ channels:
 dependencies:
   - ipython=7.15.0
   - humanfriendly=4.18
+  - jupyter=1.0.0
   - pip
   - pip:
     - pytest-watch==4.2.0
