@@ -56,6 +56,9 @@ repl: ## Run an iPython REPL
 run: $(DEPS) ## Run the program on the provided dataset
 	cat data/chicago_beach_weather.csv | ./main
 
+jupyter: $(DEPS) ## Run a jupyter notebook
+	$(VENV)/bin/jupyter notebook
+
 patch: ## Generate a patch file to submit for your solution
 	git add .
 	git diff origin/master > aquatic_interview_solution.patch

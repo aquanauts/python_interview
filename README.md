@@ -7,6 +7,7 @@ This exercise has two parts. First, we'll ask you to solve it at home on either 
   * Can you clone and set up this workspace in either Linux or OS X?
   * Can you create an effective solution in a reasonable amount of time? Does it actually work?
   * Did you add any unnecessary complexity?
+  * Do you understand the data?
   * Is it well tested?
   * Can you maintain good project hygiene, treating this like "real world" software that you would want to maintain in perpetuity?
 
@@ -73,6 +74,7 @@ This repository has a Makefile, prepared for a Linux environment, with various t
 
 ```
 aquanauts/interview$ make
+jupyter                        Run a jupyter notebook
 patch                          Generate a patch file to submit for your solution
 repl                           Run an iPython REPL
 run                            Run the program on the provided dataset
