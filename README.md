@@ -65,6 +65,7 @@ Foster Weather Station,01/02/2016,21.0,32.0,22.1,30.3
 Some things to consider:
 * The output must include a header, as specified above
 * The output must use the same date format as the input (i.e. MM/DD/YYYY)
+* The output must use floating point numbers with trailing zeros (i.e. 73.0)
 * The sort order of the data rows is not important
 * Ensure that the tests are passing (via `make test`) when you submit your solution
 
