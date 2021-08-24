@@ -62,16 +62,18 @@ Foster Weather Station,01/02/2016,21.0,32.0,22.1,30.3
 ...
 ```
 
-Some things to consider:
+### Some things to consider
+* For this first part of the exercise, you can assume the input data will be consistent with [the example](https://github.com/aquanauts/python_interview/blob/master/data/chicago_beach_weather.csv)
 * The output must include a header, as specified above
 * The output must use the same date format as the input (i.e. MM/DD/YYYY)
 * The output must use floating point numbers with trailing zeros (i.e. 73.0)
 * The sort order of the data rows is not important
-* Ensure that the tests are passing (via `make test`) when you submit your solution
+* You can [add packages](https://github.com/aquanauts/python_interview/blob/master/environment.yml), but be sure not to break the problem environment
+* Ensure that the tests are passing (via `make test`) and the program runs (via `make run`) when you submit your solution
 
 ## Problem Environment
 
-This repository has a Makefile, prepared for a Linux environment, with various targets for running tests and executing the program. If you're not familiar with [make](http://matt.might.net/articles/intro-to-make/), don't worry. You'll just need to use a few commands, all of which will be shown if you run the `make` command in the root directory of the repository.
+This repository has a Makefile, prepared for Linux or OS X, with various targets for running tests and executing the program. If you're not familiar with [make](http://matt.might.net/articles/intro-to-make/), don't worry. You'll just need to use a few commands, all of which will be shown if you run the `make` command in the root directory of the repository.
 
 ```
 aquanauts/interview$ make
