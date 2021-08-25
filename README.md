@@ -66,7 +66,7 @@ Foster Weather Station,01/02/2016,21.0,32.0,22.1,30.3
 * For this first part of the exercise, you can assume the input data will be consistent with [the example](https://github.com/aquanauts/python_interview/blob/master/data/chicago_beach_weather.csv)
 * The output must include a header, as specified above
 * The output must use the same date format as the input (i.e. MM/DD/YYYY)
-* The output must use floating point numbers with trailing zeros (i.e. `30.3` or `73.0`)
+* The output must use the same floating point precision as the input, with trailing zeros (i.e. `30.03` or `73.0`)
 * The sort order of the data rows is not important
 * You can [add packages](https://github.com/aquanauts/python_interview/blob/master/environment.yml), but be sure not to break the problem environment
 * Ensure that the tests are passing (via `make test`) and the program runs (via `make run`) when you submit your solution
