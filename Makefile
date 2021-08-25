@@ -61,4 +61,4 @@ jupyter: $(DEPS) ## Run a jupyter notebook
 
 patch: ## Generate a patch file to submit for your solution
 	git add .
-	git diff origin/master > aquatic_interview_solution.patch
+	git diff --binary origin/master > aquatic_interview_solution.patch
