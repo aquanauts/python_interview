@@ -28,7 +28,7 @@ FORCE:
 
 $(CONDA):
 	echo "Installing Miniconda3 to $(MINICONDA)"
-	wget ${MINICONDA_URL} -O $(CURDIR)/miniconda.sh
+	curl ${MINICONDA_URL} > $(CURDIR)/miniconda.sh
 	bash $(CURDIR)/miniconda.sh -u -b -p "$(CURDIR)/.miniconda3"
 	rm $(CURDIR)/miniconda.sh
 
