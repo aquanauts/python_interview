@@ -71,7 +71,7 @@ Foster Weather Station,01/02/2016,21.0,32.0,22.1,30.3
     * `73` -> `73.0`
     * `12.34` -> `12.34`
 * The sort order of the output data rows is not important
-* You can [add packages](https://github.com/aquanauts/python_interview/blob/master/environment.yml), but be sure not to break the problem environment
+* If you add Python packages to the project, be sure to add them to the [environment file](https://github.com/aquanauts/python_interview/blob/master/environment.yml), otherwise we won't be able to run your code.
 * Ensure that the tests are passing (via `make test`) and the program runs (via `make run`) when you submit your solution
 
 ## Problem Environment
