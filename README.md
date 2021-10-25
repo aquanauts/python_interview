@@ -64,6 +64,7 @@ Foster Weather Station,01/02/2016,21.0,32.0,22.1,30.3
 
 ### Some things to consider
 * For this first part of the exercise, you can assume the input data will be consistent with [the example](https://github.com/aquanauts/python_interview/blob/master/data/chicago_beach_weather.csv)
+* The output must be valid CSV, with the correct number of columns
 * The output must include a header, as specified above
 * The output must use the same date format as the input (i.e. MM/DD/YYYY)
 * The output must preserve the precision of floating point numbers while appending trailing zeros to whole numbers. This is often the default behavior in Python. Examples include:
