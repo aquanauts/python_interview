@@ -5,9 +5,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - ipython=7.15.0
-  - humanfriendly=4.18
+  - python=3.10.6
+  - pytest=7.1.2
+  - ipython=8.4.0
   - jupyter=1.0.0
-  - pip
-  - pip:
-    - pytest-watch==4.2.0

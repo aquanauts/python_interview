@@ -1,4 +1,5 @@
 .miniconda3
+.micromamba
 .venv
 .idea
 .ipynb_checkpoints

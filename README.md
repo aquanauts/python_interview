@@ -86,10 +86,9 @@ patch                          Generate a patch file to submit for your solution
 repl                           Run an iPython REPL
 run                            Run the program on the provided dataset
 test                           Run tests
-watch                          Run unit tests continuously
 ```
 
-For example, to run the tests, you run `make test`. The `watch` target will run the tests automatically whenever you change a `.py` file. Any of these targets will automatically install all the necessary dependencies (including miniconda3) to the repository directory.
+For example, to run the tests, you run `make test`. Any of these targets will automatically install all the necessary dependencies (including miniconda3) to the repository directory.
 
 If you would like to try to use Windows 10, we recommend using [Windows Subsystem for Linux (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps). As an alternative, you can use the [quick create](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine) method to set up a Ubuntu Virtual Machine on your Windows 10 PC.
 
