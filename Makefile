@@ -24,7 +24,9 @@ $(PYTHON): | $(MAMBA)
 	$(MAMBA) create --quiet --yes -p $(VENV)
 
 $(DEPS): environment.yml $(PYTHON)
-	$(MAMBA) update --prune --quiet --yes -p $(VENV) -f environment.yml
+	rm -rf $(VENV)
+	$(MAMBA) create --quiet --yes -p $(VENV)
+	$(MAMBA) install --quiet --yes -p $(VENV) -f environment.yml
 	cp environment.yml $(DEPS)
 
 .PHONY: deps
