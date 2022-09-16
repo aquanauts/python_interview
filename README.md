@@ -72,8 +72,9 @@ Foster Weather Station,01/02/2016,21.0,32.0,22.1,30.3
     * `73` -> `73.0`
     * `12.34` -> `12.34`
 * The sort order of the output data rows is not important
-* If you add Python packages to the project, be sure to add them to the [environment file](https://github.com/aquanauts/python_interview/blob/master/environment.yml), otherwise we won't be able to run your code.
+* If you add Python packages to the project, be sure to add them to the [environment file](https://github.com/aquanauts/python_interview/blob/master/environment.yml), otherwise we won't be able to run your code
 * Ensure that the tests are passing (via `make test`) and the program runs (via `make run`) when you submit your solution
+* We're looking for a result that is correct, reasonably performant, and that other software engineers would be happy to maintain
 
 ## Problem Environment
 
@@ -102,5 +103,5 @@ When you've completed the exercise and are happy with the result, run `make patc
 
 #### Submit Your Solution
 
-Once you've generated a patch file, you can send it to us using the link provided by your contact at Aquatic. If you run into problems, or have questions, feel free to reach out and ask!
+Once you've generated a patch file, you can send it to us using the link provided by your contact at Aquatic, where a software engineer will have a look at it. If you run into problems, or have questions, feel free to reach out and ask!
 
