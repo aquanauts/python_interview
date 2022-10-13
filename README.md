@@ -95,7 +95,7 @@ If you would like to try to use Windows 10, we recommend using [Windows Subsyste
 
 ## Submitting Your Solution
 
-Here's how you can submit your solution to Aquatic.
+If you've applied for an engineering role, and you've been asked to submit your solution to Aquatic, here's how:
 
 #### Run `make patch`
 
