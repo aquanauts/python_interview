@@ -6,4 +6,5 @@
 aquatic_interview_solution.patch
 __pycache__
 miniconda.sh
+venv
 .DS_Store*
