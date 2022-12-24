@@ -2,7 +2,7 @@
 
 If you have a software engineering interview at Aquatic, we'll ask you to use this prepared workspace to solve the problem described below. We're sharing it with everyone to ensure a level playing field when it comes to knowledge about technical interviews in the finance industry.
 
-This exercise has two parts. First, we'll ask you to solve it at home on either a Mac or Linux computer. If you don't have access to a computer like that, contact us, and we'll arrange to provide you with a development environment. We expect that solving this will take you an hour or two. When you're finished, generate a patch file and send it to us (instructions below). Here are some of the things we'll be looking for in your solution:
+This exercise has two parts. First, we'll ask you to solve it at home on either a Mac or Linux computer. If you don't have access to a computer like that, check out our [instructions on using Github Codespaces](CODESPACES.md). We expect that solving this will take you an hour or two. When you're finished, generate a patch file and send it to us (instructions below). Here are some of the things we'll be looking for in your solution:
 
   * Can you clone and set up this workspace in either Linux or OS X?
   * Can you create an effective solution in a reasonable amount of time? Does it actually work?
@@ -89,9 +89,7 @@ run                            Run the program on the provided dataset
 test                           Run tests
 ```
 
-For example, to run the tests, you run `make test`. Any of these targets will automatically install all the necessary dependencies (including miniconda3) to the repository directory.
-
-If you would like to try to use Windows 10, we recommend using [Windows Subsystem for Linux (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps). As an alternative, you can use the [quick create](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine) method to set up a Ubuntu Virtual Machine on your Windows 10 PC.
+For example, to run the tests, you run `make test`. Any of these targets will automatically install all the necessary dependencies (including miniconda3) to the repository directory. If these commands don't work in your development environment of choice, consider giving [Github Codespaces a try](CODESPACES.md).
 
 ## Submitting Your Solution
 
