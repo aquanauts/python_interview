@@ -6,6 +6,7 @@ This exercise has two parts. First, we'll ask you to solve it at home on either 
 
   * Can you clone and set up this workspace in either Linux or OS X?
   * Can you create an effective solution in a reasonable amount of time? Does it actually work?
+  * Does your program process the data without loading it all into memory?
   * Did you add any unnecessary complexity?
   * Do you understand the data?
   * Is it well tested?
@@ -20,36 +21,36 @@ Included in this repository is a data set taken from the [City of Chicago's Open
 You'll need to write a command line tool in Python that turns the (roughly) one hour temperature samples into daily aggregates, with the start, end, high, and low of all the values of the Air Temperature for each day, at each weather station. For example, assuming the temperature values on a particular day at a particular station were:
 
 ```
-Foster Weather Station,01/01/2016 11:00:00 PM,69
-Foster Weather Station,01/01/2016 08:00:00 PM,70
-Foster Weather Station,01/01/2016 07:00:00 PM,70
-Foster Weather Station,01/01/2016 06:00:00 PM,72
-Foster Weather Station,01/01/2016 05:00:00 PM,72
-Foster Weather Station,01/01/2016 04:00:00 PM,73
-Foster Weather Station,01/01/2016 03:00:00 PM,69
-Foster Weather Station,01/01/2016 02:00:00 PM,70
-Foster Weather Station,01/01/2016 01:00:00 PM,70
-Foster Weather Station,01/01/2016 12:00:00 PM,70
-Foster Weather Station,01/01/2016 11:00:00 AM,70
-Foster Weather Station,01/01/2016 10:00:00 AM,70
-Foster Weather Station,01/01/2016 09:00:00 AM,70
-Foster Weather Station,01/01/2016 08:00:00 AM,71
-Foster Weather Station,01/01/2016 07:00:00 AM,72
-Foster Weather Station,01/01/2016 06:00:00 AM,72
-Foster Weather Station,01/01/2016 05:00:00 AM,71
-Foster Weather Station,01/01/2016 04:00:00 AM,69
-Foster Weather Station,01/01/2016 03:00:00 AM,67
-Foster Weather Station,01/01/2016 02:00:00 AM,64
-Foster Weather Station,01/01/2016 01:00:00 AM,67
-Foster Weather Station,01/01/2016 12:00:00 AM,67
+Foster Weather Station,01/01/2016 11:00:00 PM,69.0
+Foster Weather Station,01/01/2016 08:00:00 PM,70.0
+Foster Weather Station,01/01/2016 07:00:00 PM,70.0
+Foster Weather Station,01/01/2016 06:00:00 PM,72.0
+Foster Weather Station,01/01/2016 05:00:00 PM,72.0
+Foster Weather Station,01/01/2016 04:00:00 PM,73.0
+Foster Weather Station,01/01/2016 03:00:00 PM,69.0
+Foster Weather Station,01/01/2016 02:00:00 PM,70.0
+Foster Weather Station,01/01/2016 01:00:00 PM,70.0
+Foster Weather Station,01/01/2016 12:00:00 PM,70.0
+Foster Weather Station,01/01/2016 11:00:00 AM,70.0
+Foster Weather Station,01/01/2016 10:00:00 AM,70.0
+Foster Weather Station,01/01/2016 09:00:00 AM,70.0
+Foster Weather Station,01/01/2016 08:00:00 AM,71.0
+Foster Weather Station,01/01/2016 07:00:00 AM,72.0
+Foster Weather Station,01/01/2016 06:00:00 AM,72.0
+Foster Weather Station,01/01/2016 05:00:00 AM,71.0
+Foster Weather Station,01/01/2016 04:00:00 AM,69.0
+Foster Weather Station,01/01/2016 03:00:00 AM,67.0
+Foster Weather Station,01/01/2016 02:00:00 AM,64.0
+Foster Weather Station,01/01/2016 01:00:00 AM,67.0
+Foster Weather Station,01/01/2016 12:00:00 AM,67.0
 ```
 
 Then the expected values for start, end, high, and low for this day would be:
 
-* start: 67
-* end: 69
-* high: 73
-* low: 64
+* start: 67.0
+* end: 69.0
+* high: 73.0
+* low: 64.0
 
 ### Output format
 
@@ -82,7 +83,6 @@ This repository has a Makefile, prepared for Linux or OS X, with various targets
 
 ```
 aquanauts/interview$ make
-jupyter                        Run a jupyter notebook
 patch                          Generate a patch file to submit for your solution
 repl                           Run an iPython REPL
 run                            Run the program on the provided dataset
