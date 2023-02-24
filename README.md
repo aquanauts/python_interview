@@ -4,7 +4,7 @@ If you have a software engineering interview at Aquatic, we'll ask you to use th
 
 This exercise has two parts. First, we'll ask you to solve it at home on either a Mac or Linux computer. If you don't have access to a computer like that, check out our [instructions on using Github Codespaces](CODESPACES.md). We expect that solving this will take you an hour or two. When you're finished, generate a patch file and send it to us (instructions below). Here are some of the things we'll be looking for in your solution:
 
-  * Can you clone and set up this workspace in either Linux or OS X?
+  * Can you set up this workspace and use it?
   * Can you create an effective solution in a reasonable amount of time? Does it actually work?
   * Does your program process the data without loading it all into memory?
   * Did you add any unnecessary complexity?
