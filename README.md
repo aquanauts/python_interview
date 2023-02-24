@@ -12,7 +12,7 @@ This exercise has two parts. First, we'll ask you to solve it at home on either 
   * Is it well tested?
   * Can you maintain good project hygiene, treating this like "real world" software that you would want to maintain in perpetuity?
 
-For the second part, we'll pair you up with another Aquatic engineer to review your solution and add some new functionality to it. 
+If your solution meets these criteria, we may follow up with a second interview. In this second part, we'll pair you up with another Aquatic engineer to review your solution and add some new functionality to it. 
 
 ## The Problem
 
