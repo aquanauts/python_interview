@@ -21,9 +21,11 @@ $(MAMBA):
 	$(SHELL) ./install-micromamba.sh "$(MICROMAMBA)"
 
 $(PYTHON): | $(MAMBA)
+	echo "Installing Python..."
 	$(MAMBA) create --quiet --yes -p $(VENV)
 
 $(DEPS): environment.yml $(PYTHON)
+	echo "Installing dependencies..."
 	rm -rf $(VENV)
 	$(MAMBA) create --quiet --yes -p $(VENV)
 	$(MAMBA) install --quiet --yes -p $(VENV) -f environment.yml
