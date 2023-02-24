@@ -8,4 +8,3 @@ dependencies:
   - python=3.10.6
   - pytest=7.1.2
   - ipython=8.4.0
-  - jupyter=1.0.0
