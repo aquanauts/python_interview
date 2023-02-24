@@ -18,6 +18,7 @@ help:
 FORCE:
 
 $(MAMBA):
+	echo "Installing Mamba..."
 	$(SHELL) ./install-micromamba.sh "$(MICROMAMBA)"
 
 $(PYTHON): | $(MAMBA)
