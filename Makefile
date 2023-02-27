@@ -18,12 +18,15 @@ help:
 FORCE:
 
 $(MAMBA):
+	echo "Installing Mamba..."
 	$(SHELL) ./install-micromamba.sh "$(MICROMAMBA)"
 
 $(PYTHON): | $(MAMBA)
+	echo "Installing Python..."
 	$(MAMBA) create --quiet --yes -p $(VENV)
 
 $(DEPS): environment.yml $(PYTHON)
+	echo "Installing dependencies..."
 	rm -rf $(VENV)
 	$(MAMBA) create --quiet --yes -p $(VENV)
 	$(MAMBA) install --quiet --yes -p $(VENV) -f environment.yml
@@ -45,9 +48,6 @@ repl: ## Run an iPython REPL
 
 run: $(DEPS) ## Run the program on the provided dataset
 	cat data/chicago_beach_weather.csv | ./main
-
-jupyter: $(DEPS) ## Run a jupyter notebook
-	$(VENV)/bin/jupyter notebook
 
 patch: ## Generate a patch file to submit for your solution
 	git add .
