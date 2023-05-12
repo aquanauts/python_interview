@@ -48,7 +48,7 @@ Foster Weather Station,01/01/2016 12:00:00 AM,67.0
 Then the expected values for start, end, high, and low for this day would be:
 
 * start: 67.0
-* end: 69.0
+* end: 70.0
 * high: 73.0
 * low: 64.0
 
