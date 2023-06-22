@@ -6,7 +6,7 @@ This exercise has two parts. First, we'll ask you to solve it at home on either 
 
   * Can you set up this workspace and use it?
   * Can you create an effective solution in a reasonable amount of time? Does it actually work?
-  * Does your program process the data without loading it all into memory at once?
+  * Does your program process the data without loading it all into memory at once? For example, if you use `reader.readlines()` (which returns a [list of all lines](https://docs.python.org/3/library/io.html#io.IOBase.readlines)) in your solution, you won't pass this stage.
   * Did you add any unnecessary complexity?
   * Do you understand the data?
   * Is it well tested?
