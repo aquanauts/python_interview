@@ -39,11 +39,12 @@ clean:
 	rm -rf $(VENV)
 	rm -rf $(MICROMAMBA)
 	find . -name __pycache__ | xargs rm -rf
+	find . -name .pytest_cache | xargs rm -rf
 
 test: $(DEPS)  ## Run tests
 	$(PYTHON_CMD) -m pytest
 
-repl: ## Run an iPython REPL
+repl: $(DEPS) ## Run an iPython REPL
 	$(VENV)/bin/ipython
 
 run: $(DEPS) ## Run the program on the provided dataset
