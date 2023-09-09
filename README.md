@@ -1,4 +1,4 @@
-# Aquatic's Python Programming Interview
+# Our Python Programming Interview
 
 If you have a software engineering interview at Aquatic, we'll ask you to use this prepared workspace to solve the problem described below. We're sharing it with everyone to ensure a level playing field when it comes to knowledge about technical interviews in the finance industry.
 
