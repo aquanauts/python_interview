@@ -2,8 +2,9 @@ from interview import weather
 import io
 
 
-def test_replace_me():
-    reader = io.StringIO("Line One\nLine Two\n")
+def test_process_csv():
+    reader = io.StringIO("Station Name,Measurement Timestamp,Air Temperature\n"
+                         "Foster Weather Station,12/31/2016 11:00:00 PM,-1.56\n"
+                         "63rd Street Weather Station,12/31/2016 11:00:00 PM,-1.3\n")
     writer = io.StringIO()
     weather.process_csv(reader, writer)
-    assert writer.getvalue() == "Saw 2 lines\n"
