@@ -1,5 +1,46 @@
+"""
+Program Name: Weather Data Aggregator
+Author: Jason Armstrong
+Date: 2023-10-21
+Version: 1.0
+
+Description:
+    This program is a command-line tool that aggregates weather data from Chicago beaches.
+    It reads a CSV file containing weather data and outputs another CSV file with daily aggregates
+    for each weather station. The aggregates include the start, end, high, and low air temperatures
+    for each day.
+
+Usage:
+    The program reads data from STDIN and writes the output to STDOUT. It can be used as follows:
+    `cat data/chicago_beach_weather.csv | python3 interview/__main__.py > output.csv`
+
+Requirements:
+    - Python 3.x
+    - csv module (Standard Library)
+    - datetime module (Standard Library)
+
+Input CSV Format:
+    Station Name, Measurement Timestamp, Air Temperature, ...
+
+Output CSV Format:
+    Station Name, Date, Min Temp, Max Temp, First Temp, Last Temp
+
+Performance:
+    The program is designed to process the data without loading it all into memory at once.
+
+Tests:
+    python-interview/test/weather_test.py. Run with `make test` from root of repository
+
+Notes:
+    - The program assumes that the input data will be consistent with the example provided.
+    - The output must be valid CSV, with the correct number of columns and a header.
+
+License:
+    ...
+"""
 import csv
 from datetime import datetime
+
 
 def process_csv(reader, writer):
     aggregated_data = {}  # Initialize the nested dictionary
